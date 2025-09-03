@@ -1,0 +1,29 @@
+*{
+    
+    margin:0;
+    padding: 0;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    gap:32px;    
+    background-color: #d0d0f8;
+}
+
+div
+{
+    display:flex;
+    padding: 30px;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #080893;
+    border-radius:50px;
+    background-color: rgb(13, 95, 167);
+} 
+
