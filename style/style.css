@@ -9,21 +9,23 @@ body
     display: flex;
     justify-content: center;
     align-items: center ;
-    flex-direction: column;
+    flex-direction: row;
     gap:32px;    
     background-color: #d0d0f8;
+    height: 100vh;
 }
 
-div
-{
-    display:flex;
+div{
     padding: 30px;
     flex-direction: column;
-    gap:20px;
-    justify-content: center;
-    align-items: center;
     border: 5px solid #080893;
     border-radius:50px;
     background-color: rgb(13, 95, 167);
 } 
 
+.formulario{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

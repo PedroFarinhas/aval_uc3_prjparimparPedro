@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="prjsalarioPedro"/>
+        <attribute name="authors" value="pedro.gfarinhas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-03 02:40:15 "/>
+        <attribute name="created" value="cGVkcm8uZ2ZhcmluaGFzO1NBTjA2NzQ0MTdXMTEtMTsyMDI1LTA5LTAzOyIwMTo0MzoyOSAiOzM1OTY="/>
+        <attribute name="edited" value="cGVkcm8uZ2ZhcmluaGFzO1NBTjA2NzQ0MTdXMTEtMTsyMDI1LTA5LTAzOyIwMjo0MDoxNSAiOzM7MzY5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero1, numero2, numero3, total" type="Integer" array="False" size=""/>
+            <declare name="resp1, resp2, resp3" type="String" array="False" size=""/>
+            <output expression="&quot;DIGITE O PRIMEIRO N&#218;MERO&quot;" newline="True"/>
+            <input variable="numero1"/>
+            <output expression="&quot;DIGITE O SEGUNDO N&#218;MERO&quot;" newline="True"/>
+            <input variable="numero2"/>
+            <output expression="&quot;DIGITE O TERCEIRO N&#218;MERO&quot;" newline="True"/>
+            <input variable="numero3"/>
+            <assign variable="total" expression="0"/>
+            <if expression="numero1%2=0">
+                <then>
+                    <assign variable="resp1" expression="&quot;N&#218;MERO 1 &#201; PAR &quot; &amp; &quot;(&quot; &amp; numero1 &amp; &quot;)&quot;"/>
+                </then>
+                <else>
+                    <assign variable="resp1" expression="&quot;N&#218;MERO 1 &#201; IMPAR &quot; &amp; &quot;(&quot; &amp; numero1 &amp; &quot;)&quot;"/>
+                </else>
+            </if>
+            <if expression="numero2%2=0">
+                <then>
+                    <assign variable="resp2" expression="&quot;N&#218;MERO 2 &#201; PAR &quot; &amp; &quot;(&quot; &amp; numero2 &amp; &quot;)&quot;"/>
+                </then>
+                <else>
+                    <assign variable="resp2" expression="&quot;N&#218;MERO 2 &#201; IMPAR &quot; &amp; &quot;(&quot; &amp; numero2 &amp; &quot;)&quot;"/>
+                </else>
+            </if>
+            <if expression="numero3%2=0">
+                <then>
+                    <assign variable="resp3" expression="&quot;N&#218;MERO 3 &#201; PAR &quot; &amp; &quot;(&quot; &amp; numero3 &amp; &quot;)&quot;"/>
+                </then>
+                <else>
+                    <assign variable="resp3" expression="&quot;N&#218;MERO 3 &#201; IMPAR &quot; &amp; &quot;(&quot; &amp; numero3 &amp; &quot;)&quot;"/>
+                </else>
+            </if>
+            <output expression="resp1 &amp; &quot; - &quot; &amp; resp2 &amp; &quot; - &quot; &amp; resp3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
